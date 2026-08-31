@@ -1,0 +1,93 @@
+/**
+ * Enterprise Project CRM - Responsive Breakpoints & Mobile Adaptations
+ */
+
+/* DESKTOP LARGE & LAPTOPS */
+@media (max-width: 1200px) {
+  .grid-4 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .grid-3 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* TABLETS (< 992px) */
+@media (max-width: 992px) {
+  :root {
+    --sidebar-width: 0px;
+  }
+
+  .app-sidebar {
+    transform: translateX(-100%);
+    width: 260px;
+  }
+
+  .app-sidebar.mobile-open {
+    transform: translateX(0);
+    box-shadow: var(--shadow-xl);
+  }
+
+  .app-main {
+    margin-left: 0;
+  }
+
+  .mobile-menu-btn {
+    display: flex !important;
+  }
+
+  .grid-2 {
+    grid-template-columns: 1fr;
+  }
+
+  .grid-3 {
+    grid-template-columns: 1fr;
+  }
+
+  .ticket-desk-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .matrix-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* MOBILE (< 768px) */
+@media (max-width: 768px) {
+  .main-viewport {
+    padding: 16px;
+  }
+
+  .topbar-left {
+    max-width: 220px;
+  }
+
+  .view-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .view-header-actions {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+
+  .grid-4 {
+    grid-template-columns: 1fr;
+  }
+
+  .quick-add-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .form-group-row {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .modal-dialog {
+    margin: 10px;
+    max-height: 95vh;
+  }
+}
