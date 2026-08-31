@@ -1,0 +1,152 @@
+/**
+ * Enterprise Project CRM - Support Tickets & Helpdesk Specific Styles
+ */
+
+.ticket-desk-layout {
+  display: grid;
+  grid-template-columns: 340px 1fr;
+  gap: 20px;
+  min-height: calc(100vh - 220px);
+}
+
+.ticket-queue-pane {
+  display: flex;
+  flex-direction: column;
+  max-height: calc(100vh - 220px);
+}
+
+.ticket-queue-header {
+  padding: 14px 16px;
+  border-bottom: 1px solid var(--border-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.ticket-queue-list {
+  padding: 10px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  flex: 1;
+}
+
+.ticket-queue-item {
+  padding: 12px 14px;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-sm);
+  transition: all 0.15s ease;
+}
+
+.ticket-queue-item:hover {
+  background-color: var(--bg-card-hover);
+}
+
+.ticket-queue-item.ticket-selected {
+  border-color: var(--color-primary);
+  background-color: rgba(99, 102, 241, 0.1);
+}
+
+.ticket-id-tag {
+  font-family: monospace;
+  font-weight: 700;
+  font-size: 11px;
+  color: var(--text-muted);
+}
+
+.ticket-item-subject {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text-primary);
+  line-height: 1.4;
+}
+
+/* THREAD & MESSAGES */
+.ticket-thread-pane {
+  display: flex;
+  flex-direction: column;
+  max-height: calc(100vh - 220px);
+}
+
+.ticket-thread-header {
+  padding: 18px 24px;
+  border-bottom: 1px solid var(--border-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.ticket-thread-title {
+  font-size: 16px;
+  font-weight: 800;
+  color: var(--text-primary);
+  line-height: 1.4;
+}
+
+.ticket-messages-scroll {
+  flex: 1;
+  padding: 20px 24px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.ticket-message-block {
+  padding: 14px 18px;
+  border-radius: var(--radius-md);
+  max-width: 85%;
+  font-size: 13.5px;
+  line-height: 1.5;
+}
+
+.msg-client {
+  background-color: var(--bg-card-hover);
+  border: 1px solid var(--border-color);
+  align-self: flex-start;
+}
+
+.msg-agent {
+  background-color: rgba(99, 102, 241, 0.15);
+  border: 1px solid rgba(99, 102, 241, 0.3);
+  align-self: flex-end;
+}
+
+.msg-internal-note {
+  background-color: rgba(245, 158, 11, 0.12);
+  border: 1px solid rgba(245, 158, 11, 0.3);
+  align-self: center;
+  width: 95%;
+  max-width: 95%;
+}
+
+.msg-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 6px;
+  font-size: 12px;
+}
+
+.msg-timestamp {
+  color: var(--text-muted);
+  font-size: 11px;
+}
+
+.ticket-reply-box {
+  padding: 16px 24px;
+  border-top: 1px solid var(--border-color);
+  background-color: var(--bg-sidebar);
+}
+
+.composer-type-toggle {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 8px;
+}
+
+.ticket-composer-input {
+  width: 100%;
+}
