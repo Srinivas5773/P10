@@ -1,0 +1,33 @@
+/**
+ * Enterprise Project CRM - Marketing Campaigns & Email Sequences
+ */
+
+.campaigns-stats-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.campaign-card {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.campaign-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.campaign-metrics-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  padding: 12px 0;
+  border-top: 1px solid var(--border-color);
+  border-bottom: 1px solid var(--border-color);
+  margin: 14px 0;
+}
